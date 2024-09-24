@@ -21,7 +21,7 @@ public class Puntaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        puntos.text = ("Score:"+puntajeContador+" "+"Naves:"+ naveContador);
+        puntos.text = ("Score:"+puntajeContador+" "+"ships:"+ naveContador);
         if (naveContador == 0 && spawn == true)
         {
             Instantiate(Boss, new Vector3(transform.position.x + 0, transform.position.y - 0,transform.position.z), Quaternion.identity);
